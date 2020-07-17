@@ -67,12 +67,9 @@
 
 .logo-name {
     margin-right: 25px;
-    font-family: Caveat;
-    font-style: normal;
-    font-weight: bold;
     font-size: 50px;
-    line-height: 45px;
-    color: #FFCA0E;
+    line-height: 59px;
+    color: #000044;
 }
 
 .logo-description {
@@ -142,14 +139,14 @@
 .promo-button {
     height: 64px;
     width: 281px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFCA0E;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    color: #000000;
+    color: white;
 }
 
 .promo-main {
@@ -205,7 +202,7 @@
 .card-text-container {
     display: flex;
     align-items: center;
-    height: 282px;
+    height: 220px;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #D1D1D1;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 20px 20px 0px;
@@ -213,7 +210,7 @@
 
 .card-img {
     padding: 50px 72px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFCA0E;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -492,7 +489,8 @@
     margin-left: 56%;
     padding: 11px 57px;
     border: none;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #FFC700;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
+    color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 32px;
