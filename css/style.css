@@ -73,6 +73,9 @@
 }
 
 .logo-description {
+    /*background-color: blue;*/
+    margin-left: 2px;
+    margin-top: -10px;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
@@ -117,7 +120,7 @@
 
 .promo-container {
     position: relative;
-    height: 690px;
+    height: 640px;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #E0E0E0 100%);
 }
 
@@ -131,7 +134,7 @@
     /*background-color: blue;*/
     margin-bottom: 44px;
     width: 60%;
-    font-size: 56px;
+    font-size: 50px;
     line-height: 66px;
     color: #000000;
 }
@@ -143,8 +146,8 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 36px;
     line-height: 47px;
     color: white;
 }
@@ -202,14 +205,14 @@
 .card-text-container {
     display: flex;
     align-items: center;
-    height: 220px;
+    height: 200px;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #D1D1D1;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 20px 20px 0px;
 }
 
 .card-img {
-    padding: 50px 72px;
+    padding: 40px 72px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
     border-radius: 20px 0px 0px 20px;
 }
@@ -217,8 +220,8 @@
 .card-text {
     padding: 40px 22px 40px 27px;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
     color: #000000;
 }
 
@@ -411,7 +414,7 @@
 
 .footer-container {
     /*background-color: red;*/
-    width: 47%;
+    width: 40%;
     margin: auto;
     margin-bottom: 157px;
 }
@@ -486,7 +489,7 @@
 }
 
 .input-button {
-    margin-left: 56%;
+    margin-left: 48%;
     padding: 11px 57px;
     border: none;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
@@ -510,4 +513,172 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
+}
+
+.active {
+    display: flex;
+}
+
+.modal {
+    /*padding-top: 1%;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 999;
+}
+
+.modal-dialog {
+    z-index: 10000;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #E0E0E0 100%), #ffffff;
+    box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    max-width: 580px;
+    width: 65%;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.modal-header {
+    padding-left: 45px;
+    width: 95%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #000044;
+    border-radius: 0px 40px 40px 0px;
+    height: 49px;
+    margin-bottom: 21px;
+}
+
+.header-text {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.modal-contacts {
+    padding: 20px 40px;
+    width: 80%;
+    margin: auto;
+    background: #FFF9F9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.contacts-if {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 19px;
+}
+
+.contacts-do {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.modal-phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+/*.phone-ico {
+    background-color: red;
+}*/
+
+.numbers-phone {
+    /*background-color: blue;*/
+    margin-left: 28px;
+}
+
+.phone-first-modal {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 2px;
+}
+
+.phone-second-modal {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.mail-do {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.modal-mail {
+    display: flex;
+    align-items: center;
+}
+
+.email-modal {
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.two {
+    margin-top: 30px;
+}
+
+.modal-map-container {
+    padding: 20px 40px;
+    width: 80%;
+    margin: auto;
+    background: #FFF9F9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-bottom: 13px;
+}
+
+.modal-button {
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    padding: 0px 10px;
+}
+
+.map-you-can {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.map-link {
+    display: flex;
+    align-items: center;
+}
+
+.map-question {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 28px;
+}
+
+.map-pay {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
 }
