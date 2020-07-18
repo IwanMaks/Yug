@@ -532,28 +532,32 @@
 }
 
 .modal-dialog {
+    display: flex;
     z-index: 10000;
     text-align: center;
     background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #E0E0E0 100%), #ffffff;
     box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-    max-width: 580px;
-    width: 65%;
+    max-width: 980px;
+    width: 85%;
     border-radius: 5px;
     margin: auto;
     padding: 20px 0px 20px 0px;
 }
 
 .modal-header {
-    padding-left: 45px;
+    text-align: center;
+    margin: auto;
+    /*padding-left: 45px;*/
     width: 95%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #000044;
-    border-radius: 0px 40px 40px 0px;
+    border-radius: 40px;
     height: 49px;
     margin-bottom: 21px;
 }
 
 .header-text {
+    /*background-color: red;*/
     font-weight: 500;
     font-size: 32px;
     line-height: 49px;
@@ -631,10 +635,13 @@
 }
 
 .two {
-    margin-top: 30px;
+    border-radius:40px;
+    margin: auto;
+    margin-bottom: 21px;
 }
 
 .modal-map-container {
+    height: 337px;
     padding: 20px 40px;
     width: 80%;
     margin: auto;
@@ -661,12 +668,13 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 8px;
+    margin-bottom: 40px;
 }
 
 .map-link {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .map-question {

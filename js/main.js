@@ -12,7 +12,7 @@ const promoButton = document.querySelector('.promo-button');
 const buttonContainer = document.querySelector('.button-container');
 const cardForage = document.querySelectorAll('.card-forage');
 const modal = document.querySelector('.modal');
-const modalButton = document.querySelector('.modal-button');
+//const modalButton = document.querySelector('.modal-button');
 
 window.addEventListener('scroll', () => { 
     if(pageYOffset >= 50 && screen.width > 768){
@@ -47,9 +47,9 @@ promoButton.addEventListener('click', () => {
 });
 
 
-modalButton.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+//modalButton.addEventListener('click', () => {
+//    modal.style.display = 'none';
+//});
 
 document.addEventListener('click', event => {
     if (event.target.classList.contains('modal')) {
