@@ -10,11 +10,11 @@ const socialLink = document.querySelector('.social-link');
 
 const promoButton = document.querySelector('.promo-button');
 const buttonContainer = document.querySelector('.button-container');
-const cardForage = document.querySelector('.card-forage');
+const cardForage = document.querySelectorAll('.card-forage');
 const modal = document.querySelector('.modal');
+const modalButton = document.querySelector('.modal-button');
 
 window.addEventListener('scroll', () => { 
-    console.log(pageYOffset);
     if(pageYOffset >= 50 && screen.width > 768){
         header.classList.add('white');
         logo.classList.add('logo-mini');
@@ -42,3 +42,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
+promoButton.addEventListener('click', () => {
+    modal.style.display = 'flex'; 
+});
+
+
+modalButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+document.addEventListener('click', event => {
+    if (event.target.classList.contains('modal')) {
+        modal.style.display = 'none';
+    }
+});
+
+buttonContainer.addEventListener('click', () => {
+    modal.style.display = 'flex'; 
+});
+
+for (let i = 0; i<cardForage.length; i++) {
+    cardForage[i].addEventListener('click', () => {
+        modal.style.display = 'flex'; 
+    });
+}

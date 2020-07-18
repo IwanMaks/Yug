@@ -31,9 +31,9 @@
           <div class="phone second">+7 (928) 344-84-41</div>
         </div>
         <div class="header-links">
-          <a href="#" class="header-link about">О компании</a>
-          <a href="#" class="header-link goods">Товары</a>
-          <a href="#" class="header-link contact">Контакты</a>
+          <a href="#about" class="header-link about">О компании</a>
+          <a href="#goods" class="header-link goods">Товары</a>
+          <a href="#contacts" class="header-link contact">Контакты</a>
         </div>
         <div class="social-media">
           <a href="#" class="social-link"
@@ -64,7 +64,7 @@
       </div>
     </div>
     <div class="main">
-      <div class="about-main">
+      <div class="about-main" id="about">
         <div class="about-text">О компании:</div>
         <div class="cards-container">
           <div class="card">
@@ -115,7 +115,7 @@
         </div>
       </div>
       <div class="goods-and-contacts">
-        <div class="goods-container">
+        <div class="goods-container" id="goods">
           <div class="goods-title">Товары:</div>
           <div class="goods-description">
             В данном разделе представлены категории товаров, которые можно
@@ -197,7 +197,7 @@
             </div>
           </div>
         </div>
-        <div class="contacts-title">Контакты:</div>
+        <div class="contacts-title" id="contacts">Контакты:</div>
         <div class="contacts-container">
           <div class="address-container">
             <div class="address-title">Адрес:</div>
@@ -328,6 +328,8 @@
         <button class="modal-button">ОК</button>
       </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jqueryMain.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
