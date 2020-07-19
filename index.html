@@ -14,10 +14,10 @@
     <title>ЮГ - Ветеринарная аптека в Кисловодске</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-container">
         <div class="logo-container">
-          <img src="img/logo.svg" alt="logo" class="logo" />
+          <a href="#header" class="logo-link"><img src="img/logo.svg" alt="logo" class="logo" /></a>
           <div class="logo-text">
             <div class="logo-name">Юг</div>
             <div class="logo-description">Ветеринарная аптека</div>
@@ -243,7 +243,7 @@
           Если у вас возникли вопросы, замечания или предложения, заполните
           форму ниже:
         </div>
-        <div class="form-container">
+        <form action="send.php" method="post" class="form-container">
           <input
             type="text"
             class="input-name"
@@ -263,7 +263,7 @@
             placeholder="Ваше сообщение"
           />
           <button class="input-button">Отправить</button>
-        </div>
+        </form>
       </div>
       <div class="developer-container">
         <div class="developer">
@@ -319,10 +319,10 @@
               Вы можете заказать товар по телефону, либо купить его, посетив
               ветеринарную аптеку лично.
             </div>
-            <div class="map-link">
+            <a href="#contacts" class="map-link">
               <img src="img/mapmarker.svg" alt="map" class="map-ico" />
               <div class="map-question">Как нас найти?</div>
-            </div>
+            </a>
             <div class="map-pay">Мы принимаем любые средства оплаты.</div>
           </div>
         </div>
@@ -330,6 +330,8 @@
       </div>
     </div>
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+    <script src="form.php"></script>
+    <script src="send.php"></script>
     <script src="js/jqueryMain.js"></script>
     <script src="js/main.js"></script>
   </body>

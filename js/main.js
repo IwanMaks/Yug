@@ -14,6 +14,8 @@ const cardForage = document.querySelectorAll('.card-forage');
 const modal = document.querySelector('.modal');
 //const modalButton = document.querySelector('.modal-button');
 
+const mapLink = document.querySelector('.map-link');
+
 window.addEventListener('scroll', () => { 
     if(pageYOffset >= 50 && screen.width > 768){
         header.classList.add('white');
@@ -46,7 +48,6 @@ promoButton.addEventListener('click', () => {
     modal.style.display = 'flex'; 
 });
 
-
 //modalButton.addEventListener('click', () => {
 //    modal.style.display = 'none';
 //});
@@ -66,3 +67,7 @@ for (let i = 0; i<cardForage.length; i++) {
         modal.style.display = 'flex'; 
     });
 }
+
+mapLink.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
