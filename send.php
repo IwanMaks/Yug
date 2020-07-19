@@ -21,7 +21,7 @@ echo $email;
 echo "<br>";
 echo $text;
 
-if (mail("iwan.maksackov@yandex.ru", "Вопрос с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n"))
+if (mail("iwan.maksackov@yandex.ru", "Вопрос с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: vanya.maxakov@yandex.ru \r\n"))
  {
     echo "сообщение успешно отправлено";
 } else {
