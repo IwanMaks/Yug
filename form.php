@@ -4,18 +4,18 @@
             class="input-name"
             name="name-input"
             placeholder="Ваше имя"
+            required
           />
           <input
             type="email"
             class="input-email"
             name="email-input"
             placeholder="Ваш e-mail"
+            required
           />
-          <input
-            type="text"
+          <textarea
+            name="message" cols="50" rows="10"
             class="input-description"
-            name="description-input"
-            placeholder="Ваше сообщение"
-          />
-          <button class="input-button">Отправить</button>
+            placeholder="Напишите ваше сообщение сюда..." required></textarea>
+            <input type="submit" class="input-button" value="Отправить">
         </form>

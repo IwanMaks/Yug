@@ -1,29 +1,19 @@
 <?php
 $fio = $_POST['name-input'];
 $email = $_POST['email-input'];
-$text = $_POST['description-input'];
-
+$message = $_POST['message'];
 $fio = htmlspecialchars($fio);
 $email = htmlspecialchars($email);
-$text = htmlspecialchars($text);
-
+$message = htmlspecialchars($message);
 $fio = urldecode($fio);
 $email = urldecode($email);
-$text = urldecode($text);
-
+$message = urldecode($message);
 $fio = trim($fio);
 $email = trim($email);
-$text = trim($text);
-
-echo $fio;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $text;
-
-if (mail("iwan.maksackov@yandex.ru", "Вопрос с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: vanya.maxakov@yandex.ru \r\n"))
- {
-    echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}?>
+$message  = trim($message);
+if (mail("iwan.maksackov@yandex.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email." Сообщение: ".$message ,"From: iwanmak71@yandex.ru \r\n")){  
+    echo "Сообщение успешно отправлено"; 
+} else { 
+    echo "При отправке сообщения возникли ошибки";
+}
+?>

@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="viewport" content="width=device-width">-->
     <title>ЮГ - Ветеринарная аптека в Кисловодске</title>
@@ -246,26 +247,26 @@
           форму ниже:
         </div>
         <form action="send.php" method="post" class="form-container">
-          <input
-            type="text"
-            class="input-name"
-            name="name-input"
-            placeholder="Ваше имя"
-          />
-          <input
-            type="email"
-            class="input-email"
-            name="email-input"
-            placeholder="Ваш e-mail"
-          />
-          <input
-            type="text"
-            class="input-description"
-            name="description-input"
-            placeholder="Ваше сообщение"
-          />
-          <button class="input-button">Отправить</button>
-        </form>
+            <input
+              type="text"
+              class="input-name"
+              name="name-input"
+              placeholder="Ваше имя"
+              required
+            />
+            <input
+              type="email"
+              class="input-email"
+              name="email-input"
+              placeholder="Ваш e-mail"
+              required
+            />
+            <textarea
+              name="message" cols="50" rows="10"
+              class="input-description"
+              placeholder="Напишите ваше сообщение сюда..." required></textarea>
+              <input type="submit" class="input-button" value="Отправить">
+          </form>
       </div>
       <div class="developer-container">
         <div class="developer">
