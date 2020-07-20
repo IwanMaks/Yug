@@ -55,6 +55,10 @@
     align-items: center;
 }
 
+.logo {
+    padding-top: 2px;
+}
+
 .logo-mini {
     transition: all 0.75s;
     width: 49px;
@@ -477,7 +481,7 @@
 }
 
 .input-description {
-    padding: 0px 0 15px 30px;
+    padding: 15px 0 15px 30px;
     height: 290px;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
