@@ -15,34 +15,40 @@ const modal = document.querySelector('.modal');
 //const modalButton = document.querySelector('.modal-button');
 
 const mapLink = document.querySelector('.map-link');
-const mapContainer = document.querySelector('.map-container');
+const hamburger = document.querySelector('.hamburger');
+const close = document.querySelector('.close');
+const rightMenu = document.querySelector('.right-menu');
+const rightMenuLink = document.querySelectorAll('.right-menu-link');
 
 window.addEventListener('scroll', () => { 
-    if(pageYOffset >= 50 && screen.width > 780){
-        header.classList.add('white');
-        logo.classList.add('logo-mini');
-        logoText.style.display = 'flex';
-        logoText.classList.add('flex');
-        logoPhone.classList.add('none-width');
-        logoPhone.style.display = 'none';
-        logoDescription.style.fontSize = '28px';
-        logoDescription.style.fontWeight = '300';
-        logoDescription.style.lineHeight = '33px';
-        logoDescription.style.marginLeft = '0';
-        logoDescription.style.marginTop = '0';
-    } else {
-        header.classList.remove('white');
-        logo.classList.remove('logo-mini');
-        logoText.style.display = 'block';
-        logoText.classList.remove('flex');
-        logoPhone.classList.remove('none-width');
-        logoPhone.style.display = 'block';
-        logoDescription.style.fontSize = '14px';
-        logoDescription.style.fontWeight = 'normal';
-        logoDescription.style.lineHeight = '16px';
-        logoDescription.style.marginLeft = '2px';
-        logoDescription.style.marginTop = '-10px'
+    if (screen.width > 780) {
+            if(pageYOffset >= 50){
+            header.classList.add('white');
+            logo.classList.add('logo-mini');
+            logoText.style.display = 'flex';
+            logoText.classList.add('flex');
+            logoPhone.classList.add('none-width');
+            logoPhone.style.display = 'none';
+            logoDescription.style.fontSize = '28px';
+            logoDescription.style.fontWeight = '300';
+            logoDescription.style.lineHeight = '33px';
+            logoDescription.style.marginLeft = '0';
+            logoDescription.style.marginTop = '0';
+        } else {
+            header.classList.remove('white');
+            logo.classList.remove('logo-mini');
+            logoText.style.display = 'block';
+            logoText.classList.remove('flex');
+            logoPhone.classList.remove('none-width');
+            logoPhone.style.display = 'block';
+            logoDescription.style.fontSize = '14px';
+            logoDescription.style.fontWeight = 'normal';
+            logoDescription.style.lineHeight = '16px';
+            logoDescription.style.marginLeft = '2px';
+            logoDescription.style.marginTop = '-10px'
+        }
     }
+    
 });
 
 promoButton.addEventListener('click', () => {
@@ -72,3 +78,17 @@ for (let i = 0; i<cardForage.length; i++) {
 mapLink.addEventListener('click', () => {
     modal.style.display = 'none';
 });
+
+hamburger.addEventListener('click', () => {
+    rightMenu.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+    rightMenu.style.display = 'none';
+});
+
+for (let i = 0; i < rightMenuLink.length; i++) {
+    rightMenuLink[i].addEventListener('click' , () => {
+        rightMenu.style.display = 'none';
+    });
+}

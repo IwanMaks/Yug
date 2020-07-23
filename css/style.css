@@ -3,6 +3,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a,button,input,textarea {
+    outline: none;
+}
+
 .hide {
     transition: all 0.75s;
     display: none;
@@ -707,12 +711,54 @@
     line-height: 21px;
 }
 
-.right-menu {
+.hamburger {
     display: none;
     width: 30px;
 }
 
-.right-menu span {
+.right-menu {
+    display: none;
+    z-index: 9999999;
+    text-align: center;
+    height: 260px;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #D1D1D1;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.right-menu-links {
+    padding-top: 73px;
+    margin: auto;
+    width: 40%;
+    /*position: fixed;*/
+    display: block;
+}
+
+.right-menu-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: black;
+}
+
+.link-about {
+    margin-bottom: 20px;
+}
+
+.link-goods {
+    margin-bottom: 20px;
+}
+
+.close {
+    margin: 12px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.hamburger span {
     width: 30px;
     height: 4px;
     background-color: black;
@@ -720,11 +766,15 @@
     border-radius: 2px;
 }
 
-.right-menu span {
+.hamburger span {
     margin-bottom: 3px;
 }
 
 @media (max-width: 768px) {
+    .goods-container {
+        display: none;
+    }
+
     .header {
         height: 33px;
         /*background: #FFFFFF;
@@ -736,7 +786,7 @@
         height: 30px;
     }
 
-    .right-menu {
+    .hamburger {
         display: block;
     }
 
@@ -969,7 +1019,7 @@
 
     .developer {
         font-weight: 300;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 10px;
+        line-height: 12px;
     }
 }
