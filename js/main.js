@@ -15,9 +15,7 @@ const modal = document.querySelector('.modal');
 //const modalButton = document.querySelector('.modal-button');
 
 const mapLink = document.querySelector('.map-link');
-const map = document.querySelector('.map');
-
-console.log(screen.width);
+const mapContainer = document.querySelector('.map-container');
 
 window.addEventListener('scroll', () => { 
     if(pageYOffset >= 50 && screen.width > 780){
