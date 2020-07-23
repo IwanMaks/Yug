@@ -16,18 +16,20 @@
   </head>
   <body>
     <div class="right-menu">
-        <div class="right-menu-links">
-            <div class="link-about">
-                <a href="#about" class="right-menu-link right-about">О компании</a>
-            </div>
-            <div class="link-goods">
-                <a href="#" class="right-menu-link right-goods">Товары</a>
-            </div>
-            <div class="link-contacts">
-                <a href="#contacts" class="right-menu-link right-contacts">Контакты</a>
-            </div>
+      <div class="right-menu-links">
+        <div class="link-about">
+          <a href="#about" class="right-menu-link right-about">О компании</a>
         </div>
-        <img src="img/close.svg" alt="close" class="close">
+        <div class="link-goods">
+          <a href="#" class="right-menu-link right-goods">Товары</a>
+        </div>
+        <div class="link-contacts">
+          <a href="#contacts" class="right-menu-link right-contacts"
+            >Контакты</a
+          >
+        </div>
+      </div>
+      <img src="img/close.svg" alt="close" class="close" />
     </div>
     <header class="header" id="header">
       <div class="header-container">
@@ -46,7 +48,7 @@
           <span></span>
           <span></span>
         </div>
-        
+
         <div class="logo-phone">
           <div class="phone first">+7 (928) 344-84-41</div>
           <div class="phone second">+7 (928) 344-84-41</div>
@@ -247,18 +249,18 @@
       </div>
     </div>
     <div class="footer-not-main">
-        <div class="footer-title">Мы в соцсетях:</div>
-        <div class="footer-social-media">
-            <a href="#" class="social-link"
-              ><img src="img/whatsapp.svg" alt="whatsapp" class="whatsapp"
-            /></a>
-            <a href="#" class="social-link"
-              ><img src="img/inst.svg" alt="inst" class="inst"
-            /></a>
-            <a href="#" class="social-link"
-              ><img src="img/vk.svg" alt="vk" class="vk"
-            /></a>
-          </div>
+      <div class="footer-title">Мы в соцсетях:</div>
+      <div class="footer-social-media">
+        <a href="#" class="social-link"
+          ><img src="img/whatsapp.svg" alt="whatsapp" class="whatsapp"
+        /></a>
+        <a href="#" class="social-link"
+          ><img src="img/inst.svg" alt="inst" class="inst"
+        /></a>
+        <a href="#" class="social-link"
+          ><img src="img/vk.svg" alt="vk" class="vk"
+        /></a>
+      </div>
     </div>
     <footer class="footer">
       <div class="footer-container">
@@ -268,26 +270,30 @@
           форму ниже:
         </div>
         <form action="send.php" method="post" class="form-container">
-            <input
-              type="text"
-              class="input-name"
-              name="name-input"
-              placeholder="Ваше имя"
-              required
-            />
-            <input
-              type="email"
-              class="input-email"
-              name="email-input"
-              placeholder="Ваш e-mail"
-              required
-            />
-            <textarea
-              name="message" cols="50" rows="10"
-              class="input-description"
-              placeholder="Напишите ваше сообщение сюда..." required></textarea>
-              <input type="submit" class="input-button" value="Отправить">
-          </form>
+          <input
+            type="text"
+            class="input-name"
+            name="name-input"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="email"
+            class="input-email"
+            name="email-input"
+            placeholder="Ваш e-mail"
+            required
+          />
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            class="input-description"
+            placeholder="Напишите ваше сообщение сюда..."
+            required
+          ></textarea>
+          <input type="submit" class="input-button" value="Отправить" />
+        </form>
       </div>
       <div class="developer-container">
         <div class="developer">
@@ -309,9 +315,12 @@
     <div class="modal">
       <div class="modal-dialog">
         <div class="modal-first">
-          <header class="modal-header">
-            <div class="header-text">Узнать наличие товара:</div>
-          </header>
+          <div class="header-modal-close">
+            <header class="modal-header">
+              <div class="header-text">Узнать наличие товара:</div>
+            </header>
+            <img src="img/close.svg" alt="close" class="modal-close" />
+          </div>
           <div class="modal-contacts">
             <div class="contacts-if">
               Если вам нужен конкретный товар, вы можете уточнить его наличие

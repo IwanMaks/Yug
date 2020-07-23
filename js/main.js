@@ -19,6 +19,15 @@ const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 const rightMenu = document.querySelector('.right-menu');
 const rightMenuLink = document.querySelectorAll('.right-menu-link');
+const modalClose = document.querySelector('.modal-close');
+const linkGoods = document.querySelector('.link-goods');
+
+if (screen.width > 780) {
+    modalClose.style.display = 'none';
+    //modalMapContainer.style.height = '337px'
+} else {
+    modalClose.style.display = 'block';
+}
 
 window.addEventListener('scroll', () => { 
     if (screen.width > 780) {
@@ -92,3 +101,12 @@ for (let i = 0; i < rightMenuLink.length; i++) {
         rightMenu.style.display = 'none';
     });
 }
+
+linkGoods.addEventListener('click', () => {
+    rightMenu.style.display = 'none';
+    modal.style.display = 'flex';
+});
+
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
