@@ -57,6 +57,7 @@
 
 .logo {
     padding-top: 2px;
+    margin-right: 10px;
 }
 
 .logo-mini {
@@ -611,6 +612,10 @@
     margin-left: 28px;
 }
 
+.mini-description {
+    display: none;
+}
+
 .phone-first-modal {
     font-weight: bold;
     font-size: 20px;
@@ -697,4 +702,116 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
+}
+
+.right-menu {
+    display: none;
+    width: 30px;
+}
+
+.right-menu span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    display: block;
+    border-radius: 2px;
+}
+
+.right-menu span {
+    margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 33px;
+        /*background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);*/
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .right-menu {
+        display: block;
+    }
+
+    .logo-text {
+        display: flex;
+    }
+
+    .header-container {
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .mini-description {
+        margin-right: 15px;
+        display: block;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .logo-name {
+        margin-right: 0;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .logo-description {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .logo-phone  {
+        display: none;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .button-container {
+        display: none;
+    }
+
+    .promo-text {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .promo-img {
+        height: 160px;
+        width: 200px;
+        bottom: -38px;
+    }
+
+    .promo-container {
+        height: 240px;
+    }
+
+    .promo-main {
+        top: 30px;
+        left: 3%;
+    }
+
+    .promo-button {
+        height: 40px;
+        width: 170px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+    }
 }

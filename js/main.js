@@ -16,8 +16,10 @@ const modal = document.querySelector('.modal');
 
 const mapLink = document.querySelector('.map-link');
 
+console.log(screen.width);
+
 window.addEventListener('scroll', () => { 
-    if(pageYOffset >= 50 && screen.width > 768){
+    if(pageYOffset >= 50 && screen.width > 780){
         header.classList.add('white');
         logo.classList.add('logo-mini');
         logoText.style.display = 'flex';
