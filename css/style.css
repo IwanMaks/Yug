@@ -829,6 +829,7 @@
     .card {
         display: block;
         width: 95%;
+        margin-bottom: 15px;
     }
 
     .card-img {
@@ -849,5 +850,83 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .goods-and-contacts {
+        padding-top: 12px;
+    }
+
+    .contacts-title {
+        margin-bottom: 8px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .contacts-container {
+        display: block;
+    }
+
+    .address-container {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .address-title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .address-name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .address-name-sub {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .phone-title {
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .phone-first {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .phone-second {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 8px;
+    }
+
+    .email-title {
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .email {
+        margin-bottom: 36px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .destination-description {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .map-container {
+        width: 100%;
     }
 }
