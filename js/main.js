@@ -90,14 +90,14 @@ mapLink.addEventListener('click', () => {
 });
 
 hamburger.addEventListener('click', () => {
-    rightMenu.classList.add('animate__backInRight');
-    rightMenu.classList.remove('animate__backOutRight');
+    rightMenu.classList.add('animate__bounceInRight');
     rightMenu.style.display = 'block';
+    rightMenu.classList.remove('animate__bounceOutRight');
 });
 
 close.addEventListener('click', () => {
-    rightMenu.classList.add('animate__backOutRight');
-    rightMenu.classList.remove('animate__backInRight');
+    rightMenu.classList.add('animate__bounceOutRight');
+    rightMenu.classList.remove('animate__bounceInRight');
     //rightMenu.style.display = 'none';
 });
 
