@@ -1358,4 +1358,90 @@ a,button,input,textarea {
     .goods-and-contacts {
         padding-top: 24px;
     }
+
+    .header-text {
+        font-size: 22px;
+        line-height: 49px;
+    }
+    
+    .modal-dialog {
+        text-align: start;
+    }
+
+    .contacts-if {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .modal-contacts {
+        padding: 10px 20px;
+    }
+
+    .contacts-do {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .phone-ico {
+        width: 40px;
+        height: 40px;
+    }
+
+    .phone-first-modal {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .phone-second-modal {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .numbers-phone {
+        margin-left: 18px;
+    }
+
+    .mail-do {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 6px;
+    }
+
+    .mail-ico {
+        width: 40px;
+        height: 40px;
+    }
+
+    .email-modal {
+        margin-left: 18px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .modal-map-container {
+        padding: 10px 20px;
+    }
+
+    .map-you-can {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 50px;
+    }
+
+    .map-ico {
+        width: 40px;
+        height: 40px;
+    }
+
+    .map-question {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 18px;
+    }
+
+    .map-pay {
+        font-size: 16px;
+    }
 }

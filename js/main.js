@@ -31,7 +31,7 @@ if (screen.width > 780) {
 }
 
 window.addEventListener('scroll', () => { 
-    if (screen.width > 780) {
+    if (screen.width > 900) {
             if(pageYOffset >= 50){
             header.classList.add('white');
             logo.classList.add('logo-mini');
@@ -77,7 +77,7 @@ document.addEventListener('click', event => {
         //modal.classList.remove('open');
         modal.classList.remove('animate__fadeIn');
         modal.classList.add('animate__fadeOut');
-        modal.style.display = 'none';
+        //modal.style.display = 'none';
     }
 });
 
