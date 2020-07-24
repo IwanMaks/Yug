@@ -21,6 +21,7 @@ const rightMenu = document.querySelector('.right-menu');
 const rightMenuLink = document.querySelectorAll('.right-menu-link');
 const modalClose = document.querySelector('.modal-close');
 const linkGoods = document.querySelector('.link-goods');
+const modalDialog = document.querySelector('.modal-dialog');
 
 if (screen.width > 780) {
     modalClose.style.display = 'none';
@@ -61,9 +62,11 @@ window.addEventListener('scroll', () => {
 });
 
 promoButton.addEventListener('click', () => {
-    modal.classList.add('animate__backInLeft');
-    modal.classList.remove('animate__backOutRight');
+    console.log('hui');
+    //modalDialog.classList.add('open');
+    modal.classList.add('animate__fadeIn');
     modal.style.display = 'flex';
+    modal.classList.remove('animate__fadeOut');
 });
 
 //modalButton.addEventListener('click', () => {
@@ -72,30 +75,31 @@ promoButton.addEventListener('click', () => {
 
 document.addEventListener('click', event => {
     if (event.target.classList.contains('modal')) {
-        modal.classList.remove('animate__backInLeft');
-        modal.classList.add('animate__backOutRight');
-        //modal.style.display = 'none';
+        //modal.classList.remove('open');
+        modal.classList.remove('animate__fadeIn');
+        modal.classList.add('animate__fadeOut');
+        modal.style.display = 'none';
     }
 });
 
 buttonContainer.addEventListener('click', () => {
-    modal.classList.add('animate__backInLeft');
-    modal.classList.remove('animate__backOutRight');
+    modal.classList.add('animate__fadeIn');
+    modal.classList.remove('animate__fadeOut');
     modal.style.display = 'flex'; 
 });
 
 for (let i = 0; i<cardForage.length; i++) {
     cardForage[i].addEventListener('click', () => {
-        modal.classList.add('animate__backInLeft');
-        modal.classList.remove('animate__backOutRight');
+        modal.classList.add('animate__fadeIn');
+        modal.classList.remove('animate__fadeOut');
         modal.style.display = 'flex'; 
     });
 }
 
 mapLink.addEventListener('click', () => {
-    modal.classList.remove('animate__backInLeft');
-    modal.classList.add('animate__backOutRight');
-    //modal.style.display = 'none';
+    modal.classList.remove('animate__fadeIn');
+    modal.classList.add('animate__fadeOut');
+    modal.style.display = 'none';
 });
 
 hamburger.addEventListener('click', () => {
@@ -121,13 +125,13 @@ for (let i = 0; i < rightMenuLink.length; i++) {
 linkGoods.addEventListener('click', () => {
     rightMenu.classList.add('animate__bounceOutRight');
     rightMenu.classList.remove('animate__bounceInRight');
-    modal.classList.add('animate__backInLeft');
-    modal.classList.remove('animate__backOutRight');
+    modal.classList.add('animate__fadeIn');
+    modal.classList.remove('animate__fadeOut');
     modal.style.display = 'flex';
 });
 
 modalClose.addEventListener('click', () => {
-    modal.classList.remove('animate__backInLeft');
-    modal.classList.add('animate__backOutRight');
-    //modal.style.display = 'none';
+    modal.classList.remove('animate__fadeIn');
+    modal.classList.add('animate__fadeOut');
+    modal.style.display = 'none';
 });
