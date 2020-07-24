@@ -1361,10 +1361,11 @@ a,button,input,textarea {
 
     .header-text {
         font-size: 22px;
-        line-height: 49px;
+        line-height: 29px;
     }
     
     .modal-dialog {
+        padding: 10px 0px 10px 0px;
         text-align: start;
     }
 
@@ -1426,7 +1427,7 @@ a,button,input,textarea {
     .map-you-can {
         font-size: 14px;
         line-height: 17px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .map-ico {
@@ -1443,5 +1444,14 @@ a,button,input,textarea {
 
     .map-pay {
         font-size: 16px;
+    }
+
+    .modal-header {
+        height: 29px;
+        margin-bottom: 11px;
+    }
+
+    .modal-phone {
+        margin-bottom: 12px;
     }
 }
