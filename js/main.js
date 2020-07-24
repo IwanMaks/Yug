@@ -62,7 +62,6 @@ window.addEventListener('scroll', () => {
 });
 
 promoButton.addEventListener('click', () => {
-    console.log('hui');
     //modalDialog.classList.add('open');
     modal.classList.add('animate__fadeIn');
     modal.style.display = 'flex';
