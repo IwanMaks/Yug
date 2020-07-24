@@ -61,7 +61,8 @@ window.addEventListener('scroll', () => {
 });
 
 promoButton.addEventListener('click', () => {
-    console.log('daun');
+    modal.classList.add('animate__backInLeft');
+    modal.classList.remove('animate__backOutRight');
     modal.style.display = 'flex';
 });
 
@@ -71,22 +72,30 @@ promoButton.addEventListener('click', () => {
 
 document.addEventListener('click', event => {
     if (event.target.classList.contains('modal')) {
-        modal.style.display = 'none';
+        modal.classList.remove('animate__backInLeft');
+        modal.classList.add('animate__backOutRight');
+        //modal.style.display = 'none';
     }
 });
 
 buttonContainer.addEventListener('click', () => {
+    modal.classList.add('animate__backInLeft');
+    modal.classList.remove('animate__backOutRight');
     modal.style.display = 'flex'; 
 });
 
 for (let i = 0; i<cardForage.length; i++) {
     cardForage[i].addEventListener('click', () => {
+        modal.classList.add('animate__backInLeft');
+        modal.classList.remove('animate__backOutRight');
         modal.style.display = 'flex'; 
     });
 }
 
 mapLink.addEventListener('click', () => {
-    modal.style.display = 'none';
+    modal.classList.remove('animate__backInLeft');
+    modal.classList.add('animate__backOutRight');
+    //modal.style.display = 'none';
 });
 
 hamburger.addEventListener('click', () => {
@@ -103,14 +112,22 @@ close.addEventListener('click', () => {
 
 for (let i = 0; i < rightMenuLink.length; i++) {
     rightMenuLink[i].addEventListener('click' , () => {
-        rightMenu.style.display = 'none';
+        rightMenu.classList.add('animate__bounceOutRight');
+        rightMenu.classList.remove('animate__bounceInRight');
+        //rightMenu.style.display = 'none';
     });
 }
 
 linkGoods.addEventListener('click', () => {
-    
+    rightMenu.classList.add('animate__bounceOutRight');
+    rightMenu.classList.remove('animate__bounceInRight');
+    modal.classList.add('animate__backInLeft');
+    modal.classList.remove('animate__backOutRight');
+    modal.style.display = 'flex';
 });
 
 modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
+    modal.classList.remove('animate__backInLeft');
+    modal.classList.add('animate__backOutRight');
+    //modal.style.display = 'none';
 });
