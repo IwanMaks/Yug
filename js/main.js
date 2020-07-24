@@ -61,7 +61,8 @@ window.addEventListener('scroll', () => {
 });
 
 promoButton.addEventListener('click', () => {
-    modal.style.display = 'flex'; 
+    console.log('daun');
+    modal.style.display = 'flex';
 });
 
 //modalButton.addEventListener('click', () => {
@@ -89,11 +90,15 @@ mapLink.addEventListener('click', () => {
 });
 
 hamburger.addEventListener('click', () => {
+    rightMenu.classList.add('animate__backInRight');
+    rightMenu.classList.remove('animate__backOutRight');
     rightMenu.style.display = 'block';
 });
 
 close.addEventListener('click', () => {
-    rightMenu.style.display = 'none';
+    rightMenu.classList.add('animate__backOutRight');
+    rightMenu.classList.remove('animate__backInRight');
+    //rightMenu.style.display = 'none';
 });
 
 for (let i = 0; i < rightMenuLink.length; i++) {
@@ -103,8 +108,7 @@ for (let i = 0; i < rightMenuLink.length; i++) {
 }
 
 linkGoods.addEventListener('click', () => {
-    rightMenu.style.display = 'none';
-    modal.style.display = 'flex';
+    
 });
 
 modalClose.addEventListener('click', () => {
