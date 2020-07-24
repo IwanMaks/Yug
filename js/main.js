@@ -23,12 +23,12 @@ const modalClose = document.querySelector('.modal-close');
 const linkGoods = document.querySelector('.link-goods');
 const modalDialog = document.querySelector('.modal-dialog');
 
-if (screen.width > 780) {
-    modalClose.style.display = 'none';
-    //modalMapContainer.style.height = '337px'
-} else {
-    modalClose.style.display = 'block';
-}
+//if (screen.width > 780) {
+//    modalClose.style.display = 'none';
+//    //modalMapContainer.style.height = '337px'
+//} else {
+//    modalClose.style.display = 'block';
+//}
 
 window.addEventListener('scroll', () => { 
     if (screen.width > 900) {
