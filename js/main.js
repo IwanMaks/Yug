@@ -77,7 +77,7 @@ document.addEventListener('click', event => {
         //modal.classList.remove('open');
         modal.classList.remove('animate__fadeIn');
         modal.classList.add('animate__fadeOut');
-        //modal.style.display = 'none';
+        modal.style.display = 'none';
     }
 });
 
