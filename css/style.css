@@ -1477,3 +1477,17 @@ a,button,input,textarea {
         display: none;
     }
 }
+
+@media (max-width: 1989px) and (min-width: 1711px) {
+    .card-forage {
+        width: 359px;
+        height: 322px;
+    }
+}
+
+@media (max-width: 2053px) and (min-width: 1990px) {
+    .card-forage {
+        width: 369px;
+        height: 332px;
+    }
+}
