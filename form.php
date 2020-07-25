@@ -1,4 +1,4 @@
-<form action="send.php" method="post" class="form-container">
+<!--<form action="send.php" method="post" class="form-container">
           <input
             type="text"
             class="input-name"
@@ -18,4 +18,4 @@
             class="input-description"
             placeholder="Напишите ваше сообщение сюда..." required></textarea>
             <input type="submit" class="input-button" value="Отправить">
-        </form>
+        </form>-->
