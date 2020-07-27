@@ -272,7 +272,7 @@
           Если у вас возникли вопросы, замечания или предложения, заполните
           форму ниже:
         </div>
-        <form action="send.php" method="post" class="form-container" >
+        <form action="send.php" method="post" class="form-container" id="form">
           <input
             type="text"
             class="input-name"
@@ -295,7 +295,7 @@
             placeholder="Напишите ваше сообщение сюда..."
             required
           ></textarea>
-          <input type="submit" class="input-button" value="Отправить" />
+          <input type="submit" class="input-button" value="Отправить"/>
         </form>
       </div>
       <div class="developer-container">
@@ -366,14 +366,8 @@
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <!--<script>
-        $('#ajax-form').submit(function(e) {
-            e.preventDefault();
-        });
-    </script>-->
     <script src="js/jqueryMain.js"></script>
     <script src="js/main.js"></script>
-    <!--<script src="form.php"></script>-->
-    <!--<script src="send.php"></script>-->
+    <script src="sendjs.js"></script>
   </body>
 </html>

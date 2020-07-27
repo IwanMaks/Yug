@@ -7,11 +7,6 @@ a,button,input,textarea {
     outline: none;
 }
 
-.hide {
-    transition: all 0.75s;
-    display: none;
-}
-
 .flex {
     transition: all 0.75s;
     align-items: center;
@@ -49,7 +44,6 @@ a,button,input,textarea {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    /*background-color: red;*/
     display: flex;
     width: 100%;
 }
@@ -86,7 +80,6 @@ a,button,input,textarea {
 }
 
 .logo-description {
-    /*background-color: blue;*/
     margin-left: 2px;
     margin-top: -10px;
     font-size: 14px;
@@ -104,7 +97,6 @@ a,button,input,textarea {
 }
 
 .header-links {
-    /*background-color: white;*/
     width: 35%;
     display: flex;
     align-items: center;
@@ -144,7 +136,6 @@ a,button,input,textarea {
 }
 
 .promo-text {
-    /*background-color: blue;*/
     margin-bottom: 44px;
     width: 60%;
     font-size: 50px;
@@ -166,7 +157,6 @@ a,button,input,textarea {
 }
 
 .promo-main {
-    /*background-color: red;*/
     position: absolute;
     top: 180px;
     left: 6%;
@@ -198,7 +188,6 @@ a,button,input,textarea {
 .about-text {
     margin: auto;
     text-align: center;
-    /*background-color: blue;*/
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
@@ -210,7 +199,6 @@ a,button,input,textarea {
     display: flex;
     align-items: center;
     margin: auto;
-    /*background-color: red;*/
     width: 95%;
     margin-bottom: 28px;
 }
@@ -263,7 +251,6 @@ a,button,input,textarea {
 }
 
 .goods-description {
-    /*background-color: tomato;*/
     width: 95%;
     margin: auto;
     font-weight: 300;
@@ -312,7 +299,6 @@ a,button,input,textarea {
 }
 
 .address-container {
-    /*background: #C4C4C4;*/
     width: 30%;
     padding: 36px 25px 19px 38px;
 }
@@ -321,7 +307,6 @@ a,button,input,textarea {
     border-radius: 0px 20px 20px 0px;
     width: 70%;
     height: 638px;
-    /*background-color: #C4C4C4;*/
 }
 
 .map {
@@ -409,7 +394,6 @@ a,button,input,textarea {
 }
 
 .footer-title {
-    /*background-color: blue;*/
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -419,7 +403,6 @@ a,button,input,textarea {
 .footer-social-media {
     padding-bottom: 11px;
     margin-top: 10px;
-    /*background-color: red;*/
 }
 
 .footer {
@@ -428,7 +411,6 @@ a,button,input,textarea {
 }
 
 .footer-container {
-    /*background-color: red;*/
     width: 40%;
     margin: auto;
     margin-bottom: 157px;
@@ -443,7 +425,6 @@ a,button,input,textarea {
 }
 
 .footer-description {
-    /*background-color: blue;*/
     width: 100%;
     font-weight: 300;
     font-size: 36px;
@@ -459,9 +440,6 @@ a,button,input,textarea {
     box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     display: block;
-    /* flex-wrap: wrap; */
-    /* background-color: blue; */
-    /* margin: auto; */
 }
 
 .input-name {
@@ -505,7 +483,6 @@ a,button,input,textarea {
 }
 
 .input-button {
-    /*margin-left: 48%;*/
     padding: 11px 57px;
     border: none;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #000044;
@@ -536,7 +513,6 @@ a,button,input,textarea {
 }
 
 .modal {
-    /*padding-top: 1%;*/
     position: fixed;
     left: 0;
     top: 0;
@@ -564,19 +540,11 @@ a,button,input,textarea {
     border-radius: 5px;
     margin: auto;
     padding: 20px 0px 20px 0px;
-    /*transition: all 0.5s ease;
-	opacity: 0;
-	visibility: hidden;*/
-	/*&.open {
-		visibility: visible;
-		opacity: 1;
-	}*/
 }
 
 .modal-header {
     text-align: center;
     margin: auto;
-    /*padding-left: 45px;*/
     width: 95%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #000044;
     border-radius: 40px;
@@ -585,7 +553,6 @@ a,button,input,textarea {
 }
 
 .header-text {
-    /*background-color: red;*/
     font-weight: 500;
     font-size: 32px;
     line-height: 49px;
@@ -622,12 +589,7 @@ a,button,input,textarea {
     margin-bottom: 21px;
 }
 
-/*.phone-ico {
-    background-color: red;
-}*/
-
 .numbers-phone {
-    /*background-color: blue;*/
     margin-left: 28px;
 }
 
@@ -673,7 +635,6 @@ a,button,input,textarea {
 }
 
 .modal-map-container {
-    /*height: 337px;*/
     padding: 37px 40px;
     width: 80%;
     margin: auto;
@@ -739,15 +700,10 @@ a,button,input,textarea {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
 }
 
-/*.right-menu.open {
-    display: block;
-}*/
-
 .right-menu-links {
     padding-top: 73px;
     margin: auto;
     width: 40%;
-    /*position: fixed;*/
     display: block;
 }
 
@@ -797,8 +753,6 @@ a,button,input,textarea {
 
     .header {
         height: 33px;
-        /*background: #FFFFFF;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);*/
     }
 
     .logo {

@@ -12,7 +12,6 @@ const promoButton = document.querySelector('.promo-button');
 const buttonContainer = document.querySelector('.button-container');
 const cardForage = document.querySelectorAll('.card-forage');
 const modal = document.querySelector('.modal');
-//const modalButton = document.querySelector('.modal-button');
 
 const mapLink = document.querySelector('.map-link');
 const hamburger = document.querySelector('.hamburger');
@@ -21,14 +20,6 @@ const rightMenu = document.querySelector('.right-menu');
 const rightMenuLink = document.querySelectorAll('.right-menu-link');
 const modalClose = document.querySelector('.modal-close');
 const linkGoods = document.querySelector('.link-goods');
-const modalDialog = document.querySelector('.modal-dialog');
-
-//if (screen.width > 780) {
-//    modalClose.style.display = 'none';
-//    //modalMapContainer.style.height = '337px'
-//} else {
-//    modalClose.style.display = 'block';
-//}
 
 window.addEventListener('scroll', () => { 
     if (screen.width > 900) {
@@ -62,19 +53,13 @@ window.addEventListener('scroll', () => {
 });
 
 promoButton.addEventListener('click', () => {
-    //modalDialog.classList.add('open');
     modal.classList.add('animate__fadeIn');
     modal.style.display = 'flex';
     modal.classList.remove('animate__fadeOut');
 });
 
-//modalButton.addEventListener('click', () => {
-//    modal.style.display = 'none';
-//});
-
 document.addEventListener('click', event => {
     if (event.target.classList.contains('modal')) {
-        //modal.classList.remove('open');
         modal.classList.remove('animate__fadeIn');
         modal.classList.add('animate__fadeOut');
         modal.style.display = 'none';
@@ -110,14 +95,12 @@ hamburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
     rightMenu.classList.add('animate__bounceOutRight');
     rightMenu.classList.remove('animate__bounceInRight');
-    //rightMenu.style.display = 'none';
 });
 
 for (let i = 0; i < rightMenuLink.length; i++) {
     rightMenuLink[i].addEventListener('click' , () => {
         rightMenu.classList.add('animate__bounceOutRight');
         rightMenu.classList.remove('animate__bounceInRight');
-        //rightMenu.style.display = 'none';
     });
 }
 

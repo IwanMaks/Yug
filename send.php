@@ -14,10 +14,8 @@ $message  = trim($message);
 if (isset($fio)) {
     if (mail("iwan.maksackov@yandex.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email." Сообщение: ".$message ,"From: iwanmak71@yandex.ru \r\n")){  
         header("refresh:0.5; url=http://yug"); 
-        echo '<script>alert("Сообщение отправлено")</script>';
     } else { 
         header("refresh:0.5; url=http://yug"); 
-        echo '<script>alert("При отправке сообщения возникла ошибка")</script>';
     }
 }
 ?>
